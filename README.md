@@ -1,1 +1,3 @@
 # StudyScope
+
+StudyScope is a competitive study tracking web application designed to motivate users through accountability and gamification. It allows individuals to track their study time using a Pomodoro-style timer. Users manually start and complete each study or break session, ensuring that only intentional, focused time is recorded. Each completed session adds to a user’s cumulative study time, which is then used to generate a real-time leaderboard. This fosters a competitive environment where users can compare their progress with others. Future iterations will include team-based leaderboards to encourage collaboration and group accountability.
