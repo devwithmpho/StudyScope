@@ -1,18 +1,21 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import HomePage from './Pages/HomePage';
-import NotFoundPage from './Pages/NotFoundPage';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+import HomePage from './pages/HomePage';
+import NotFoundPage from './pages/NotFoundPage';
+import Layout from './components/Layout';
 
 const App = () => {
 	return (
-		<div>
-			<BrowserRouter>
-				<Routes>
+		<Router>
+			<Routes>
+				<Route element={<Layout />}>
 					<Route path="/" element={<HomePage />} />
-					<Route path="*" element={<NotFoundPage />} />
-				</Routes>
-			</BrowserRouter>
-		</div>
+				</Route>
+
+				<Route path="*" element={<NotFoundPage />} />
+			</Routes>
+		</Router>
 	);
 };
 
